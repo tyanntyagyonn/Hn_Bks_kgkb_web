@@ -12,7 +12,7 @@ if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
 def ボタン():
     #if st.button("科学部文化祭"):
         #st.session_state.bangou = 0
-    if st.button("工学班","aiueo"):
+    if st.button("工学班"):
         st.session_state.bangou = 1
     if st.button("生物班"):
         st.session_state.bangou = 2
@@ -60,10 +60,11 @@ def ページ移動():
 
 
 #処理
-st.title("科学部文化祭")
-サイドバーボタン()
-ボタン()
-ページ移動()
+while True:
+    st.title("科学部文化祭")
+    サイドバーボタン()
+    ボタン()
+    ページ移動()
 
 
 
