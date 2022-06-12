@@ -58,8 +58,8 @@ def ページ移動():
     else:
         化学班()
 
-a = [st.button("aiueo")]
-if st.button("aiueo"):
+a = st.button("aiueo")
+if a:
     st.write("kakikukeko")
 
 #処理
