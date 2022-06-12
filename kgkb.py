@@ -1,7 +1,7 @@
 import streamlit as st
 
 #初期設定
-if 'bangou' not in st.session_state:
+if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
     st.session_state.bangou = 0
 
 
@@ -58,26 +58,18 @@ def 化学班():
 def ページ移動():
     if st.session_state.bangou == 0:
         科学部文化祭()
-        サイドバーボタン()
-        ボタン()
     elif st.session_state.bangou == 1:
         工学班()
-        サイドバーボタン()
-        ボタン()
     elif st.session_state.bangou == 2:
         生物班()
-        サイドバーボタン()
-        ボタン()
     else:
         化学班()
-        サイドバーボタン()
-        ボタン()
 
 
-
-if 'syokigamen' not in st.session_state:
+#処理
+    サイドバーボタン()
     ページ移動()
-
+    ボタン()
 
 
 
