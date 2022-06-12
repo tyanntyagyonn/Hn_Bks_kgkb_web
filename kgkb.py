@@ -62,7 +62,6 @@ a = [st.button("aiueo")]
 if a:
     st.write("kakikukeko")
     #a = [0]
-a
 
 #処理
 st.title("科学部文化祭")
