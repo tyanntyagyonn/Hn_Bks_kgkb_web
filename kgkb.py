@@ -67,12 +67,12 @@ def ページ移動():
 
 
 #処理
-if kurikaesi == False:
+if st.session_state.kurikaesi == False:
     ページ移動()
     サイドバーボタン()
     ボタン()
 
-if kurikaesi == True:
+if st.session_state.kurikaesi == True:
     ページ移動()
     サイドバーボタン()
     ボタン()
