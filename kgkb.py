@@ -74,8 +74,6 @@ if st.session_state.kurikaesi == False:
 
 if st.session_state.kurikaesi == True:
     ページ移動()
-    サイドバーボタン()
-    ボタン()
 
 
         
