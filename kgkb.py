@@ -1,9 +1,10 @@
 import streamlit as st
 
 #初期設定
-if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
+if 'bangou' not in st.session_state:
     st.session_state.bangou = 0
-    st.session_state.kurikaesi  = False
+
+
 
 
 
@@ -11,16 +12,16 @@ if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
 def ボタン():
     if st.button("科学部文化祭"):
         st.session_state.bangou = 0
-        st.session_state.kurikaesi = True
+        ページ移動()
     if st.button("工学班"):
         st.session_state.bangou = 1
-        st.session_state.kurikaesi = True
+        ページ移動()
     if st.button("生物班"):
         st.session_state.bangou = 2
-        st.session_state.kurikaesi = True
+        ページ移動()
     if st.button("化学班"):
         st.session_state.bangou = 3
-        st.session_state.kurikaesi = True
+        ページ移動()
 
 
 
@@ -28,16 +29,16 @@ def ボタン():
 def サイドバーボタン():
     if st.sidebar.button("科学部文化祭 "):
         st.session_state.bangou = 0
-        st.session_state.kurikaesi = True
+        ページ移動()
     if st.sidebar.button("工学班 "):
         st.session_state.bangou = 1
-        st.session_state.kurikaesi = True
+        ページ移動()
     if st.sidebar.button("生物班 "):
         st.session_state.bangou = 2
-        st.session_state.kurikaesi = True
+        ページ移動()
     if st.sidebar.button("化学班 "):
         st.session_state.bangou = 3
-        st.session_state.kurikaesi = True
+        ページ移動()
 
 
 
@@ -57,19 +58,26 @@ def 化学班():
 def ページ移動():
     if st.session_state.bangou == 0:
         科学部文化祭()
+        サイドバーボタン()
+        ボタン()
     elif st.session_state.bangou == 1:
         工学班()
+        サイドバーボタン()
+        ボタン()
     elif st.session_state.bangou == 2:
         生物班()
+        サイドバーボタン()
+        ボタン()
     else:
         化学班()
+        サイドバーボタン()
+        ボタン()
 
 
 
-#処理
+if 'syokigamen' not in st.session_state:
     ページ移動()
-    サイドバーボタン()
-    ボタン()
+
 
 
 
