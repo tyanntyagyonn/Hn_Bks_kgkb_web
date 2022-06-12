@@ -1,7 +1,7 @@
 import streamlit as st
 
 #初期設定
-if 'bangou' not in st.session_state:
+if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
     st.session_state.bangou = 0
     st.session_state.kurikaesi  = False
 
