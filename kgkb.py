@@ -67,13 +67,10 @@ def ページ移動():
 
 
 #処理
-if st.session_state.kurikaesi == False:
+for i in range(2):
     ページ移動()
-    サイドバーボタン()
-    ボタン()
-
-if st.session_state.kurikaesi == True:
-    ページ移動()
+    #サイドバーボタン()
+    #ボタン()
 
 
         
