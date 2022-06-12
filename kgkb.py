@@ -12,16 +12,12 @@ if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
 def ボタン():
     if st.button("科学部文化祭"):
         st.session_state.bangou = 0
-        ページ移動()
     if st.button("工学班"):
         st.session_state.bangou = 1
-        ページ移動()
     if st.button("生物班"):
         st.session_state.bangou = 2
-        ページ移動()
     if st.button("化学班"):
         st.session_state.bangou = 3
-        ページ移動()
 
 
 
@@ -29,16 +25,13 @@ def ボタン():
 def サイドバーボタン():
     if st.sidebar.button("科学部文化祭 "):
         st.session_state.bangou = 0
-        ページ移動()
     if st.sidebar.button("工学班 "):
         st.session_state.bangou = 1
-        ページ移動()
     if st.sidebar.button("生物班 "):
         st.session_state.bangou = 2
-        ページ移動()
+
     if st.sidebar.button("化学班 "):
         st.session_state.bangou = 3
-        ページ移動()
 
 
 
