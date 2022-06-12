@@ -58,7 +58,7 @@ def ページ移動():
     else:
         化学班()
 
-a = [1,2,3,4,5]
+a = [st.button("aiueo")]
 
 #処理
 st.title("科学部文化祭")
