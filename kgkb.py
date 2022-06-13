@@ -61,7 +61,7 @@ def ページ移動():
 #処理
 
 horizon = Image.open("化学イラスト.jpg")
-st.image(horizon , use_column_width=True)
+st.image(horizon , use_column_width=False)
 
 st.title("科学部文化祭")
 
