@@ -63,7 +63,8 @@ def ページ移動():
 
 #処理
 horizon = Image.open("horizon fw 0.jpg")
-st.image(horizon)
+col1, col2, col3 = st.beta_columns(3)
+col1 = ボタン()
 st.title("科学部文化祭")
 サイドバーボタン() 
 ボタン()
