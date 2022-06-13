@@ -10,14 +10,11 @@ if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
 
 #ボタン
 def 工学班ボタン():
-    if st.button("工学班"):
-        st.session_state.bangou = 1
+    st.button("工学班")
 def 生物班ボタン():
-    if st.button("生物班"):
-        st.session_state.bangou = 2
+    st.button("生物班")
 def 化学班ボタン():
-    if st.button("化学班"):
-        st.session_state.bangou = 3
+    st.button("化学班")
 
 
 
