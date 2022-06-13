@@ -10,11 +10,14 @@ if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
 
 #ボタン
 def 工学班ボタン():
-    st.button("工学班")
+    if st.button("工学班"):
+        st.session_state.bangou = 1
 def 生物班ボタン():
-    st.button("生物班")
+    if st.button("生物班"):
+        st.session_state.bangou = 2
 def 化学班ボタン():
-    st.button("化学班")
+    if st.button("化学班"):
+        st.session_state.bangou = 3
 
 
 
@@ -64,13 +67,12 @@ st.title("科学部文化祭")
 
 サイドバーボタン()
 
-kougakuhan, seibutuhan, kagakuhan  = st.beta_columns(3)
+kougakuhan, seibutuhan, kagakuhan  = st.columns(3)
 with kougakuhan:
     工学班ボタン()
 with seibutuhan:
     生物班ボタン()
-with kagakuhan:
-    化学班ボタン()
+with kagakuhan:化学班ボタン()
 
 ページ移動()
 
