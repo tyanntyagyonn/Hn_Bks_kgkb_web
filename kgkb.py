@@ -1,10 +1,10 @@
 import streamlit as st
 
-
-
 #初期設定
 if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
     st.session_state.bangou = 1
+
+
 
 
 
@@ -58,12 +58,13 @@ def ページ移動():
     else:
         化学班()
 
-
+        
 
 #処理
-ページ移動()
+st.title("科学部文化祭")
 サイドバーボタン()
 ボタン()
+ページ移動()
 
 
 
