@@ -1,3 +1,4 @@
+from curses import use_default_colors
 import streamlit as st
 from PIL import Image
 
@@ -10,13 +11,13 @@ if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
 
 
 #ボタン
-def ボタン():
-    #if st.button("科学部文化祭"):
-        #st.session_state.bangou = 0
+def 工学班ボタン():
     if st.button("工学班"):
         st.session_state.bangou = 1
+def 生物班ボタン():
     if st.button("生物班"):
         st.session_state.bangou = 2
+def 化学班ボタン():
     if st.button("化学班"):
         st.session_state.bangou = 3
 
@@ -62,13 +63,21 @@ def ページ移動():
 
 
 #処理
+
 horizon = Image.open("horizon fw 0.jpg")
-col1, col2, col3 = st.beta_columns(3)
-col1 = ボタン()
+Image.open(horizon , use_column_width=True)
+
 st.title("科学部文化祭")
-サイドバーボタン() 
-ボタン()
+
+サイドバーボタン()
+
+kougakuhan, seibutuhan, kagakuhan  = st.beta_columns(3)
+kougakuhan = 工学班ボタン()
+seibutuhan = 生物班ボタン()
+kagakuhan = 化学班ボタン()
+
 ページ移動()
+
 
 
 
