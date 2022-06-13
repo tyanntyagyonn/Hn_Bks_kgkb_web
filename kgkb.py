@@ -67,12 +67,9 @@ st.title("科学部文化祭")
 
 サイドバーボタン()
 
-kougakuhan, seibutuhan, kagakuhan  = st.columns(3)
-with kougakuhan:
-    工学班ボタン()
-with seibutuhan:
-    生物班ボタン()
-with kagakuhan:化学班ボタン()
+工学班ボタン()
+生物班ボタン()
+化学班ボタン()
 
 ページ移動()
 
