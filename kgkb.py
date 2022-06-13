@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 #初期設定
 if 'bangou' not in st.session_state and 'kurikaesi' not in st.session_state:
@@ -58,9 +59,10 @@ def ページ移動():
     else:
         化学班()
 
-        
+
 
 #処理
+Image.open("horizon fw 0.jpg")
 st.title("科学部文化祭")
 サイドバーボタン()
 ボタン()
