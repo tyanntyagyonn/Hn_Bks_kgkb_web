@@ -62,9 +62,10 @@ def ページ移動():
 
 
 #処理
-Image.open("horizon fw 0.jpg")
+horizon = Image.open("horizon fw 0.jpg")
+st.image(horizon , use_column_width=True)
 st.title("科学部文化祭")
-サイドバーボタン()
+サイドバーボタン() 
 ボタン()
 ページ移動()
 
